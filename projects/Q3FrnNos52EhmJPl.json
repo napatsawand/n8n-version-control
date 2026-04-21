@@ -1,0 +1,16 @@
+{
+  "id": "Q3FrnNos52EhmJPl",
+  "name": "GoDigit",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "Q3FrnNos52EhmJPl",
+    "teamName": "GoDigit"
+  },
+  "variableStubs": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "tJi9ecCOS6XJCeWn",
+  "name": "DB2",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "tJi9ecCOS6XJCeWn",
+    "teamName": "DB2"
+  },
+  "variableStubs": []
+}

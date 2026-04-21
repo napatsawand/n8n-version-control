@@ -1,0 +1,67 @@
+{
+  "id": "SqDhdueB3LaGmjgH",
+  "name": "My workflow 3914",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "88fc2abc-6838-4e06-8570-55da021c133e",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "0f3bfa0e-7371-43ff-902e-aa2162812985",
+              "name": "key",
+              "value": "value",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "fbf9a6dd-db41-4cf5-b275-7c94fdfa1934",
+      "name": "Edit Fields"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Edit Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "triggerCount": 0,
+  "versionId": "e164e63a-e264-4636-ab54-60363185fc3c",
+  "owner": {
+    "type": "personal",
+    "projectId": "8t3lEYLdCOQJ6eWC",
+    "projectName": "Napatsawan Daungsanit <napatsawand@tokiomarinesafety.co.th>",
+    "personalEmail": "napatsawand@tokiomarinesafety.co.th"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}

@@ -1,0 +1,16 @@
+{
+  "id": "nDYyW8rBjFylH7e9",
+  "name": "Planning",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "nDYyW8rBjFylH7e9",
+    "teamName": "Planning"
+  },
+  "variableStubs": []
+}

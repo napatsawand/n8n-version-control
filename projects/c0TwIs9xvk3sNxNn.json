@@ -1,0 +1,16 @@
+{
+  "id": "c0TwIs9xvk3sNxNn",
+  "name": "Production",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "c0TwIs9xvk3sNxNn",
+    "teamName": "Production"
+  },
+  "variableStubs": []
+}

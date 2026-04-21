@@ -1,0 +1,16 @@
+{
+  "id": "HLSfI5TiZbTvHm5h",
+  "name": "Motor Claims",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "HLSfI5TiZbTvHm5h",
+    "teamName": "Motor Claims"
+  },
+  "variableStubs": []
+}

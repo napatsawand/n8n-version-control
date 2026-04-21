@@ -1,0 +1,22 @@
+{
+  "tags": [
+    {
+      "id": "MBxj00DPvBivFNQ4",
+      "name": "report"
+    },
+    {
+      "id": "9gBIvF1P69vkCPlU",
+      "name": "admin"
+    }
+  ],
+  "mappings": [
+    {
+      "workflowId": "4p4UvKG5molBOvOy",
+      "tagId": "9gBIvF1P69vkCPlU"
+    },
+    {
+      "workflowId": "4p4UvKG5molBOvOy",
+      "tagId": "MBxj00DPvBivFNQ4"
+    }
+  ]
+}

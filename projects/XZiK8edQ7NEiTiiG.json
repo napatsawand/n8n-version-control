@@ -1,0 +1,16 @@
+{
+  "id": "XZiK8edQ7NEiTiiG",
+  "name": "Actuary",
+  "icon": {
+    "type": "icon",
+    "value": "layers"
+  },
+  "description": "",
+  "type": "team",
+  "owner": {
+    "type": "team",
+    "teamId": "XZiK8edQ7NEiTiiG",
+    "teamName": "Actuary"
+  },
+  "variableStubs": []
+}
