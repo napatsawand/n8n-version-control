@@ -1,0 +1,85 @@
+{
+  "id": "UCVPQusK9vjlDAAB",
+  "name": "Push test",
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "a5aca9be-23bb-49df-b2cd-5da5f2090d7b",
+      "name": "When clicking ‘Execute workflow’"
+    },
+    {
+      "parameters": {
+        "resource": "table",
+        "workbook": {
+          "__rl": true,
+          "value": "013MSLFBOFCS67LIK2GFA3MBE7W2Y3SMGO",
+          "mode": "list",
+          "cachedResultName": "TA-Log-email",
+          "cachedResultUrl": "https://tmithnet-my.sharepoint.com/personal/napatsawand_tokiomarinesafety_co_th/_layouts/15/Doc.aspx?sourcedoc=%7BF5BD14C5-5AA1-4131-B604-9FB6B1B930CE%7D&file=TA-Log-email.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1"
+        },
+        "worksheet": {
+          "__rl": true,
+          "value": "{27C89101-48F9-4042-B72D-FFF208DFE8AD}",
+          "mode": "list",
+          "cachedResultName": "Sheet1",
+          "cachedResultUrl": "https://tmithnet-my.sharepoint.com/personal/napatsawand_tokiomarinesafety_co_th/_layouts/15/Doc.aspx?sourcedoc=%7BF5BD14C5-5AA1-4131-B604-9FB6B1B930CE%7D&file=TA-Log-email.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1"
+        },
+        "table": {
+          "__rl": true,
+          "value": "{35D41E8B-27C9-4550-8447-88732FA3941E}",
+          "mode": "list",
+          "cachedResultName": "Table2",
+          "cachedResultUrl": "https://tmithnet-my.sharepoint.com/personal/napatsawand_tokiomarinesafety_co_th/_layouts/15/Doc.aspx?sourcedoc=%7BF5BD14C5-5AA1-4131-B604-9FB6B1B930CE%7D&file=TA-Log-email.xlsx&action=default&mobileredirect=true&DefaultItemOpen=1&activeCell=Sheet1!A1:T52"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcel",
+      "typeVersion": 2.2,
+      "position": [
+        208,
+        0
+      ],
+      "id": "628b9a67-280e-4ac1-a2b5-a48b762c78b3",
+      "name": "Append rows to table",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "Z2piCZnXVzEaOo8V",
+          "name": "[Napatsawan] Microsoft Excel account 13"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "When clicking ‘Execute workflow’": {
+      "main": [
+        [
+          {
+            "node": "Append rows to table",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "triggerCount": 0,
+  "versionId": "0217735d-3b52-4e2b-8cf6-ae8d12eee3bc",
+  "owner": {
+    "type": "personal",
+    "projectId": "8t3lEYLdCOQJ6eWC",
+    "projectName": "Napatsawan Daungsanit <napatsawand@tokiomarinesafety.co.th>",
+    "personalEmail": "napatsawand@tokiomarinesafety.co.th"
+  },
+  "parentFolderId": null,
+  "isArchived": false
+}
