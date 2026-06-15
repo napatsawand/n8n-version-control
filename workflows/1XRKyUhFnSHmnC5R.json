@@ -1,0 +1,179 @@
+{
+  "id": "1XRKyUhFnSHmnC5R",
+  "name": "My workflow 3963",
+  "nodes": [
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        656,
+        -32
+      ],
+      "id": "10970d0d-d861-41df-bc98-ca0351bcd826",
+      "name": "AI Agent"
+    },
+    {
+      "parameters": {
+        "model": "gpt-5",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatAzureOpenAi",
+      "typeVersion": 1,
+      "position": [
+        576,
+        144
+      ],
+      "id": "4819ec2d-e3a6-4dcf-a922-16ea1a5b59e6",
+      "name": "Azure OpenAI Chat Model",
+      "credentials": {
+        "azureOpenAiApi": {
+          "id": "MDpg2AcjHQYJEL5w",
+          "name": "[AIRnD] Azure Open AI account"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "type": "@n8n/n8n-nodes-langchain.memoryBufferWindow",
+      "typeVersion": 1.4,
+      "position": [
+        736,
+        176
+      ],
+      "id": "ca05e07a-9f23-4fcf-8ccb-24016d770c7b",
+      "name": "Simple Memory"
+    },
+    {
+      "parameters": {
+        "filters": {}
+      },
+      "type": "n8n-nodes-base.microsoftExcelTool",
+      "typeVersion": 2.2,
+      "position": [
+        896,
+        128
+      ],
+      "id": "be87259a-5e50-430e-a08d-0fb44805d198",
+      "name": "Get workbooks in Microsoft Excel 365",
+      "credentials": {
+        "microsoftExcelOAuth2Api": {
+          "id": "Z2piCZnXVzEaOo8V",
+          "name": "[Napatsawan] Microsoft Excel account 13"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "",
+        "height": 416,
+        "width": 1904,
+        "color": "#FDFCFC"
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        272,
+        -96
+      ],
+      "typeVersion": 1,
+      "id": "042d2952-32f0-4715-a6b3-4f3adfa59c65",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "pollTimes": {
+          "item": [
+            {
+              "mode": "everyMinute"
+            }
+          ]
+        },
+        "filters": {},
+        "options": {}
+      },
+      "type": "n8n-nodes-base.microsoftOutlookTrigger",
+      "typeVersion": 1,
+      "position": [
+        416,
+        -32
+      ],
+      "id": "0dd69a1d-659c-4e05-9d4d-21f30364760f",
+      "name": "Microsoft Outlook Trigger",
+      "credentials": {
+        "microsoftOutlookOAuth2Api": {
+          "id": "DWLc8g6AxIJqQI4P",
+          "name": "[Napatsawan] Microsoft Outlook account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Azure OpenAI Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Simple Memory": {
+      "ai_memory": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_memory",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get workbooks in Microsoft Excel 365": {
+      "ai_tool": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "ai_tool",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Agent": {
+      "main": [
+        []
+      ]
+    },
+    "Microsoft Outlook Trigger": {
+      "main": [
+        [
+          {
+            "node": "AI Agent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "triggerCount": 0,
+  "versionId": "f9b4bba2-26d4-40c0-9f82-0e971d912135",
+  "owner": {
+    "type": "personal",
+    "projectId": "8t3lEYLdCOQJ6eWC",
+    "projectName": "Napatsawan Daungsanit <napatsawand@tokiomarinesafety.co.th>",
+    "personalEmail": "napatsawand@tokiomarinesafety.co.th"
+  },
+  "parentFolderId": null,
+  "isArchived": false,
+  "nodeGroups": []
+}
